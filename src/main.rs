@@ -6,7 +6,7 @@ use postgres::{Client, Error, NoTls};
 fn main() -> Result<(), Error> {
     if let Ok(connection_url) = env::var("DB_URL") {
         loop {
-            check_tickets(&*connection_url);
+            check_tickets(&*connection_url)?;
             thread::sleep(time::Duration::from_secs(10));
         }
     } else {
