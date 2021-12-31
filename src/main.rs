@@ -43,5 +43,5 @@ order by t.category_id", &[])?;
 }
 
 fn print_header() {
-    println!("{:<19} {:<12} {}", "CATEGORY", "STATUS", "SOLD/MAX");
+    println!("{:<19} {:<12} {}", "CATEGORY", "STATUS", "COUNT/MAX");
 }

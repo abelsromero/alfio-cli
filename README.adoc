@@ -10,9 +10,25 @@ All rights for name belong to its respective owners.
 . Set `DB_URL` environment variable with full database connection url.
 . Run command.
 
-_Example_
-
+.example
  $ DB_URL="user:pass@postgresql://my-host:8888/my-db-name"
+
+The command runs in endless loop, to stop it close the terminal or kill the process (^C).
+
+The output displays the tickets grouped by category and status.
+Status being:
+* free: available to purchase
+* acquired: purchase completed
+* other statuses: purchase in process, cancelled or on error.
+
+.output
+----
+CATEGORY            STATUS       COUNT/MAX
+Blind                free         9/9
+Blind + Workshops    free         12/12
+Early                free         17/17
+Early + Workshops    free         22/22
+----
 
 == Build
 
