@@ -1,4 +1,4 @@
-= Alf.io CLI (prototype)
+= Alf CTL (prototype)
 
 This is a starting for a cli to interact with Alf.io via cli.
 
